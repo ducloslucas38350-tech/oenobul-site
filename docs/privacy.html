@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Confidentialité — Oenobul</title>
+  <meta name="description" content="Politique de confidentialité d’Oenobul (v1) : données locales, aucune collecte, aucune publicité." />
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <div class="logo"><span>OB</span></div>
+      <div class="badge">Confidentialité</div>
+    </header>
+
+    <section class="hero">
+      <h1>Politique de confidentialité</h1>
+      <p>Version : 1.0 — Dernière mise à jour : <span id="date"></span></p>
+      <script>
+        // Met automatiquement la date du jour
+        (function(){
+          const d = new Date();
+          const s = d.toLocaleDateString('fr-FR', { year:'numeric', month:'long', day:'2-digit' });
+          document.getElementById('date').textContent = s;
+        })();
+      </script>
+    </section>
+
+    <section class="grid">
+      <article class="card">
+        <h3>1. Portée</h3>
+        <p>La présente politique décrit la façon dont l’application <strong>Oenobul</strong> traite vos données dans sa version actuelle (v1).</p>
+
+        <h3>2. Données collectées</h3>
+        <p><strong>Oenobul ne collecte pas de données personnelles.</strong> Les informations que vous saisissez (mesures, densités, températures, paramètres de prise de mousse, etc.) sont <strong>stockées localement</strong> sur votre appareil.</p>
+
+        <h3>3. Stockage & traitement</h3>
+        <p>Toutes les données liées à l’usage de l’application sont conservées en local par iOS/iPadOS. Aucune transmission vers des serveurs externes n’est effectuée par Oenobul dans cette version.</p>
+
+        <h3>4. Synchronisation & collaboration</h3>
+        <p>Des fonctionnalités optionnelles de synchronisation (iCloud) et de collaboration sont prévues pour une version Pro ultérieure. Si/Quand elles seront proposées, elles seront <strong>désactivées par défaut</strong> et feront l’objet d’une mise à jour de cette politique détaillant les données traitées, la base légale et vos choix de consentement.</p>
+
+        <h3>5. Publicité & analytique</h3>
+        <p>Oenobul n’intègre aucun SDK publicitaire et ne réalise pas de suivi analytique inter-sites. Il n’y a pas de profilage publicitaire.</p>
+
+        <h3>6. Droits des utilisateurs</h3>
+        <p>Vos données étant locales, vous pouvez les gérer directement depuis l’app (ex. suppression d’une cuve/mesure). Vous pouvez également supprimer l’application pour effacer toutes les données stockées par Oenobul sur votre appareil.</p>
+
+        <h3>7. Sécurité</h3>
+        <p>iOS/iPadOS sécurise l’accès aux données locales au niveau du système. Nous recommandons d’activer un code/verrouillage biométrique sur votre appareil.</p>
+
+        <h3>8. Contact</h3>
+        <p>Pour toute question ou demande : <a href="mailto:oenobul@gmail.com">oenobul@gmail.com</a></p>
+
+        <h3>9. Modifications de cette politique</h3>
+        <p>Cette politique pourra être mise à jour pour refléter des évolutions fonctionnelles (ex. iCloud/Collaboration) ou réglementaires. La version et la date ci-dessus seront ajustées en conséquence.</p>
+      </article>
+    </section>
+
+    <footer class="footer">
+      © <span id="y"></span> Oenobul — <a href="./index.html">Page marketing</a> — <a href="./support.html">Assistance</a>
+      <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+    </footer>
+  </div>
+</body>
+</html>
