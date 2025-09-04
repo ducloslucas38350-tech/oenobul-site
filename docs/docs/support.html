@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Assistance — Oenobul</title>
+  <meta name="description" content="Aide, FAQ et contact pour Oenobul : vinification, prise de mousse et suivi de fermentation." />
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <div class="logo"><span>OB</span></div>
+      <div class="badge">Assistance</div>
+    </header>
+
+    <section class="hero">
+      <h1>Besoin d’aide ?</h1>
+      <p>Bienvenue sur la page d’assistance d’Oenobul. Retrouvez ici la FAQ, des guides rapides et un moyen de contact.</p>
+      <div class="btns">
+        <!-- Remplace l’email par le tien -->
+        <a class="btn" href="oenobul@gmail.com">✉️ Écrire au support</a>
+        <a class="btn" href="./index.html">← Retour à la page principale</a>
+      </div>
+    </section>
+
+    <section class="grid">
+      <article class="card">
+        <h3>FAQ</h3>
+        <h4>Comment enregistrer une fermentation ?</h4>
+        <p>Ouvrez l’onglet <strong>Suivi de fermentation</strong>, créez ou sélectionnez votre cuve, puis ajoutez vos mesures (densité, température, etc.). Les graphiques se mettent à jour automatiquement.</p>
+
+        <h4>Comment corriger la densité par la température ?</h4>
+        <p>Dans <strong>Contrôle maturité</strong>, renseignez densité et température : Oenobul applique la correction et estime la concentration en sucres.</p>
+
+        <h4>Prise de mousse : quels paramètres ?</h4>
+        <p>Dans <strong>Prise de mousse</strong>, choisissez <em>pétillant naturel</em> ou <em>méthode traditionnelle</em>, puis saisissez les paramètres demandés. L’app calcule précisément les ajouts nécessaires.</p>
+
+        <h4>Mes données sont-elles synchronisées ?</h4>
+        <p>Actuellement, vos données sont <strong>stockées en local sur l’appareil</strong>. La synchronisation iCloud et la collaboration sont prévues pour la version Pro.</p>
+
+        <h4>Compatibilité</h4>
+        <p>iOS / iPadOS récents. L’app fonctionne hors connexion pour l’essentiel des fonctionnalités.</p>
+      </article>
+
+      <article class="card half">
+        <h3>Contact</h3>
+        <p>Une question, une idée ? Écrivez-nous : <a href="oenobul@gmail.com">contact@exemple.com</a></p>
+        <p>Merci de préciser votre modèle d’appareil, la version iOS et la version de l’app.</p>
+      </article>
+
+      <article class="card half">
+        <h3>Notes de version</h3>
+        <p>Première release : contrôle maturité, prise de mousse, suivi de fermentation (graphiques), stockage local.</p>
+      </article>
+    </section>
+
+    <footer class="footer">
+      © <span id="y"></span> Oenobul — <a href="./index.html">Page marketing</a>
+      <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+    </footer>
+  </div>
+</body>
+</html>
